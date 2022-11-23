@@ -44,7 +44,7 @@ case $1 in
         echo \> Build project...
         fn_prepare
         npx tsc --build ./tsconfig.build.json
-        fn_cleanup
+        # fn_cleanup
         ;;
 
     watch)
