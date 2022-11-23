@@ -17,10 +17,10 @@
   ],
   "scripts": {
     "test": "ava",
-    "prepare": "./package.sh build",
-    "build": "./package.sh build",
-    "watch": "./package.sh watch",
-    "clean": "./package.sh clean"
+    "prepare": "npx tsc --build ./tsconfig.build.json",
+    "build": "package.sh build",
+    "watch": "package.sh watch",
+    "clean": "package.sh clean"
   },
   "repository": {
     "type": "git",
