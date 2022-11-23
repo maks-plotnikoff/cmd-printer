@@ -1,0 +1,51 @@
+{
+  "name": "@maks-plotnikoff/cmd-printer",
+  "version": "1.3.0",
+  "description": "Module for print PDF using node.js and SumatraPDF",
+  "type": "module",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "exports": {
+    ".": {
+      "require": "./dist/cjs/index.js",
+      "import": "./dist/esm/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "bin"
+  ],
+  "scripts": {
+    "test": "ava",
+    "prepare": "./package.sh build",
+    "build": "./package.sh build",
+    "watch": "./package.sh watch",
+    "clean": "./package.sh clean"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maks-plotnikoff/cmd-printer.git"
+  },
+  "keywords": [
+    "printer",
+    "windows",
+    "cmd"
+  ],
+  "author": "dr-null <silvaaguilarfelipe@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maks-plotnikoff/cmd-printer/issues"
+  },
+  "homepage": "https://github.com/maks-plotnikoff/cmd-printer#readme",
+  "dependencies": {
+    "codepage": "^1.15.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.3",
+    "@types/uuid": "^8.3.4",
+    "ava": "^4.3.1",
+    "ts-node": "^10.8.2",
+    "typescript": "^4.7.4"
+  }
+}
